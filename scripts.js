@@ -24,3 +24,12 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+/* ... (previous scripts remain the same) ... */
+
+// Add parallax effect to the hero section
+window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    const hero = document.querySelector('.hero');
+    hero.style.transform = `translateY(${scrolled * 0.4}px)`;
+});
+
